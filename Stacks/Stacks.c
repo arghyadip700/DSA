@@ -48,12 +48,22 @@ int main(){
     s->size = 5;
     s->top=-1;
     s->arr = (int *) malloc(s->size * sizeof(int));
-
-    push(s,1);
-    push(s,2);
-    push(s,3);
-    push(s,4);
-    push(s,5);
+    int p1, p2, p3, p4, p5;
+    printf("Enter the 1st element to push: ");
+    scanf("%d", &p1);
+    push(s,p1);
+    printf("Enter the 2nd element to push: ");
+    scanf("%d", &p2);
+    push(s,p2);
+    printf("Enter the 3rd element to push: ");
+    scanf("%d", &p3);
+    push(s,p3);
+    printf("Enter the 4th element to push: ");
+    scanf("%d", &p4);
+    push(s,p4);
+    printf("Enter the 5th element to push: ");
+    scanf("%d", &p5);
+    push(s,p5);
 
     printf("Popped element is %d\n", pop(s));
     printf("Popped element is %d\n", pop(s));
